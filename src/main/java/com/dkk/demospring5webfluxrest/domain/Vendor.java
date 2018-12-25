@@ -1,13 +1,12 @@
 package com.dkk.demospring5webfluxrest.domain;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Document
-public class Category {
-    @Id
+public class Vendor {
     private String id;
-    private String description;
+    private String firstName;
+    private String lastName;
 }
